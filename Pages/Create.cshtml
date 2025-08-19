@@ -1,0 +1,28 @@
+@page
+@model JobBoard.Pages.CreateModel
+
+<h2>Post a New Job</h2>
+
+<form method="post">
+    <div>
+        <label>Title:</label>
+        <input asp-for="Job.Title" />
+    </div>
+    <div>
+        <label>Company:</label>
+        <input asp-for="Job.Company" />
+    </div>
+    <div>
+        <label>Location:</label>
+        <input asp-for="Job.Location" />
+    </div>
+    <div>
+        <label>Type:</label>
+        <input asp-for="Job.Type" />
+    </div>
+    <div>
+        <label>Description:</label>
+        <textarea asp-for="Job.Description"></textarea>
+    </div>
+    <button type="submit">Post Job</button>
+</form>
